@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samantha - Mi Sitio Personal</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <img src="c:\Users\Samantha\OneDrive\Documents\me.jpg" alt="Foto de Samantha" class="perfil">
+        <h1>¡Hola! Soy Samantha</h1>
+        <p>Estudiante del Instituto Adventista</p>
+
+        <blockquote class="frase-jung">
+            “Hasta que lo inconsciente no se haga consciente, el subconsciente seguirá dirigiendo tu vida y tú lo llamarás destino.”
+            <span>– Carl Gustav Jung</span>
+        </blockquote>
+    </header>
+
+    <main>
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>Tengo 17 años y estudio en el Instituto Adventista. Me gusta expresarme, aprender cosas nuevas y disfrutar de los momentos con mis amigos.</p>
+        </section>
+
+        <section id="intereses">
+            <h2>Mis intereses</h2>
+            <ol>
+                <li>Escuchar música</li>
+                <li>Leer libros</li>
+                <li>Ver películas</li>
+                <li>Ir a la playa</li>
+                <li>Salir con mis amigos</li>
+            </ol>
+        </section>
+
+        <section id="video">
+            <h2>Un video que me gusta</h2>
+            <a href="https://youtu.be/ZCUblJ1j0Ag" target="_blank">Haz clic aquí para ver el video</a>
+        </section>
+
+        <section id="secreto">
+            <h2>Zona secreta</h2>
+            <button onclick="mostrarImagenes()">Mostrar imágenes secretas</button>
+            <div id="imagenes-secretas" class="oculto">
+                <img src="c:\Users\Samantha\OneDrive\Documents\familia.jpg" alt="familia">
+                <img src="c:\Users\Samantha\OneDrive\Documents\alina.jpg" alt="bsf">
+                <img src="c:\Users\Samantha\OneDrive\Documents\kassie.jpg" alt="Amigos">
+                <img src="c:\Users\Samantha\OneDrive\Documents\Brad.jpg" alt="amigos">
+                <imh src="c:\Users\Samantha\OneDrive\Documents\austin.jpg" alt="mi bebe"
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Samantha - Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function mostrarImagenes() {
+            const contenedor = document.getElementById("imagenes-secretas");
+            contenedor.classList.toggle("oculto");
+        }
+    </script>
+</body>
+</html>
